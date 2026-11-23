@@ -86,3 +86,40 @@ nav.bt a.on{color:var(--go)}
 .lang-dd-menu button{background:none;border:none;color:var(--tx);font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.04em;padding:10px 14px;text-align:left;cursor:pointer}
 .lang-dd-menu button:hover{background:var(--go);color:#111}
 .lang-dd-menu button.on{background:var(--go);color:#111}
+
+/* HOME REDESIGN — additive styles; existing sections remain unchanged */
+.home-content{padding-top:18px;padding-bottom:28px}
+.home-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:4px 0 30px}
+.home-tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;min-height:142px;padding:16px 14px;background:linear-gradient(145deg,#242424,#171717);border:1px solid var(--ln);border-radius:10px;color:var(--tx);text-decoration:none;overflow:hidden;transition:border-color .15s,transform .15s}
+.home-tile:hover{border-color:var(--go);transform:translateY(-2px)}
+.home-tile-primary{background:linear-gradient(145deg,#3b2b0b,#1b1b1b 78%);border-color:#8a6100}
+.home-tile strong{font:400 clamp(23px,4vw,30px)/1.05 "Bebas Neue",Impact,sans-serif;letter-spacing:.03em;margin:7px 0 5px;color:var(--go)}
+.home-tile-primary strong{color:#fff}
+.home-tile>span:not(.tile-kicker):not(.tile-arrow):not(.tile-soon){font-size:13px;line-height:1.35;color:var(--mt);max-width:92%}
+.tile-kicker{font:700 10px/1.2 Barlow,system-ui,sans-serif;letter-spacing:.14em;color:var(--go);text-transform:uppercase}
+.tile-arrow{position:absolute;right:13px;bottom:12px;font-size:20px;color:var(--go)}
+.home-tile-soon{border-style:dashed;background:linear-gradient(145deg,#202020,#151515)}
+.home-tile-soon strong{font-size:clamp(19px,3.5vw,25px)}
+.home-tile-soon strong i{font-style:normal;color:var(--or)}
+.tile-soon{margin-top:auto;padding-top:12px;font:400 12px "Bebas Neue",Impact,sans-serif;letter-spacing:.1em;color:var(--or)}
+.home-market{margin:0 0 28px}
+.home-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:10px}
+.home-section-head .ct{margin:5px 0 0}
+.home-text-link{flex-shrink:0;color:var(--go);font:400 15px "Bebas Neue",Impact,sans-serif;letter-spacing:.05em;text-decoration:none}
+.home-text-link:hover{color:#fff}
+.home-feature{position:relative;min-height:190px;margin:0 0 10px;padding:22px 18px;border:1px solid var(--ln);border-radius:10px;background:linear-gradient(90deg,rgba(10,10,10,.96),rgba(10,10,10,.72)),url('hero-bg.jpg') center/cover no-repeat;overflow:hidden}
+.home-feature-copy{max-width:580px}
+.home-feature h2{font:400 clamp(28px,5vw,40px)/1.02 "Bebas Neue",Impact,sans-serif;margin:8px 0;color:var(--tx)}
+.home-feature h2 b{color:var(--go);font-weight:400}
+.home-feature p{max-width:520px;margin:0 0 12px;color:var(--mt);font-size:14px}
+@media(min-width:760px){
+  .home-shortcuts{gap:14px;margin-top:10px;margin-bottom:38px}
+  .home-tile{min-height:158px;padding:20px}
+  .home-feature{padding:28px 26px;min-height:210px}
+}
+@media(max-width:380px){
+  .home-shortcuts{gap:8px}
+  .home-tile{min-height:150px;padding:13px 11px}
+  .home-tile strong{font-size:22px}
+  .home-tile>span:not(.tile-kicker):not(.tile-arrow):not(.tile-soon){font-size:12px}
+}
