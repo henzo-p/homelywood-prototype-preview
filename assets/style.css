@@ -86,3 +86,5 @@ nav.bt a.on{color:var(--go)}
 .lang-dd-menu button{background:none;border:none;color:var(--tx);font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.04em;padding:10px 14px;text-align:left;cursor:pointer}
 .lang-dd-menu button:hover{background:var(--go);color:#111}
 .lang-dd-menu button.on{background:var(--go);color:#111}
+/* Original Homelywood wordmark: keep the black source artwork legible on dark surfaces. */
+.hdr .lg,.hero-logo{filter:invert(1)}
